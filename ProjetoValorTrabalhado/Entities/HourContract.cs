@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace ProjetoValorTrabalhado.Entities
 {
@@ -20,6 +19,11 @@ namespace ProjetoValorTrabalhado.Entities
             Date = date;
             ValuePerHour = valuePerHour;
             Hours = hours;
+        }
+
+        public double TotalValue()
+        {
+            return Hours * ValuePerHour;
         }
     }
 }
